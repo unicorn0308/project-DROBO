@@ -14,8 +14,9 @@ public:
     Laser();
 
     void Draw();
-
+	void SetPosition(int x);
     void Off();
+    void On();  
     bool IsOff();
 
     int GetX();

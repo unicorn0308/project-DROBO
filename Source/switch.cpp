@@ -22,3 +22,8 @@ int Switch::GetY()
 {
     return y;
 }
+void Switch::SetPosition(int px, int py)
+{
+    x = px;
+    y = py;
+}

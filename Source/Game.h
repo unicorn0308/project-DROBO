@@ -8,7 +8,7 @@ class Door;
 class Game
 {
 private:
-
+    int stage;
    
 
     bool laserOff;
@@ -27,4 +27,6 @@ public:
 
     void Update();
     void Draw();
+
+    void ResetStage();
 };

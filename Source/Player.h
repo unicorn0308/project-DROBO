@@ -22,6 +22,8 @@ public:
     void Update() override;
     void Draw() override;
 
+    void SetPosition(int x, int y); 
+
 
     bool Hit(int ox, int oy, int w, int h);
 

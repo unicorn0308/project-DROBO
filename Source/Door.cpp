@@ -22,3 +22,8 @@ int Door::GetY()
 {
     return y;
 }
+void Door::SetPosition(int px,int py)
+{
+    x = px;
+	y = py;
+}

@@ -14,7 +14,7 @@ public:
     Door();
 
     void Draw();
-
+	void SetPosition(int x, int y);
     int GetX();
     int GetY();
 };

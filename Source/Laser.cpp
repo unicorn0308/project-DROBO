@@ -33,3 +33,15 @@ int Laser::GetX()
 {
     return x;
 }
+ void Laser::On()
+{
+     off = false;
+  }
+
+
+
+void Laser::SetPosition(int px )
+{
+    x = px;
+   
+}

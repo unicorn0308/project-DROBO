@@ -25,6 +25,12 @@ void Player::Draw()
 	DrawGraph(x, y, hImage, TRUE);
 }
 
+void Player::SetPosition(int px, int py)
+{
+    x = px;
+    y = py;
+}
+
 bool Player::Hit(int ox, int oy, int w, int h)
 {
     if (x + 32 > ox && x < ox + w &&
