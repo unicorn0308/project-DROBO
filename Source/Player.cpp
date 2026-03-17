@@ -1,10 +1,11 @@
 #include "Player.h"
 #include <DxLib.h>
 
-Player::Player()
+Player::Player() :Object2D(), game(nullptr), x(0), y(0), hImage(-1)
 {
      x = 100;
      y = 300;
+	 hImage = LoadGraph("Image/player.png");
 }
 
 Player::~Player()
@@ -21,7 +22,7 @@ void Player::Update()
 
 void Player::Draw()
 {
-    DrawBox(x, y, x + 32, y + 32, GetColor(0, 0, 255), TRUE);
+	DrawGraph(x, y, hImage, TRUE);
 }
 
 bool Player::Hit(int ox, int oy, int w, int h)
@@ -34,3 +35,4 @@ bool Player::Hit(int ox, int oy, int w, int h)
 
     return false;
 }
+

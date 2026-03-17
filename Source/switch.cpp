@@ -1,15 +1,16 @@
 #include "Switch.h"
 #include <DxLib.h>
 
-Switch::Switch()
+Switch::Switch() :Object2D(), x(0), y(0), hImage(-1)
 {
     x = 500;
     y = 500;
+	hImage = LoadGraph("Image/switch.png");
 }
 
 void Switch::Draw()
 {
-    DrawBox(x, y, x + 32, y + 32, GetColor(255, 255, 0), TRUE);
+	DrawGraph(x, y, hImage, TRUE);
 }
 
 int Switch::GetX()

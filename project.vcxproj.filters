@@ -68,6 +68,12 @@
     <ClCompile Include="Source\Door.cpp">
       <Filter>PlayScene</Filter>
     </ClCompile>
+    <ClCompile Include="Source\ResultScene.cpp">
+      <Filter>ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameOverScene.cpp">
+      <Filter>ResultScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Screen.h" />
@@ -147,6 +153,12 @@
     <ClInclude Include="Source\Door.h">
       <Filter>PlayScene</Filter>
     </ClInclude>
+    <ClInclude Include="Source\ResultScene.h">
+      <Filter>ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameOverScene.h">
+      <Filter>ResultScene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Library">
@@ -163,6 +175,9 @@
     </Filter>
     <Filter Include="ImGui\BootScene">
       <UniqueIdentifier>{4e7a122b-01b5-4a1f-bdd8-381c4cb2403d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResultScene">
+      <UniqueIdentifier>{499b0b9b-ac1d-44b3-b0e7-2534cfa4bfe6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

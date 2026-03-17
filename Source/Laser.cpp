@@ -1,17 +1,21 @@
 #include "Laser.h"
 #include <DxLib.h>
 
-Laser::Laser()
+Laser::Laser() :Object2D(), x(0), hImage(-1), off(false)
 {
     x = 1000;
+	hImage = LoadGraph("Image/laser.png");
     off = false;
 }
 
 void Laser::Draw()
 {
-    if (!off)
+	for (int i = 0; i < 1080 / 128; i++)//縦に16ピクセルのレーザーを描画
     {
-        DrawBox(x, 0, x + 16, 1280, GetColor(255, 0, 0), TRUE);
+        if (!off)
+        {
+            DrawGraph(x,i*128, hImage, TRUE);
+        }
     }
 }
 

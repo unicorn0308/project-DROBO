@@ -1,10 +1,12 @@
 #pragma once
+#include "Object2D.h"
 
-class Laser
+class Laser : public Object2D
 {
 private:
 
     int x;
+    int hImage;
     bool off;
 
 public:

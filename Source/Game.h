@@ -9,6 +9,12 @@ class Game
 {
 private:
 
+   
+
+    bool laserOff;
+    bool isDead;
+
+
     Player* player;
     Laser* laser;
     Switch* sw;

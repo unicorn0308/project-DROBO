@@ -1,15 +1,16 @@
 #include "Door.h"
 #include <DxLib.h>
 
-Door::Door()
+Door::Door() :Object2D(), x(0), y(0), hImage(-1)
 {
     x = 1500;
     y = 900;
+	hImage = LoadGraph("Image/door.png");
 }
 
 void Door::Draw()
 {
-    DrawBox(x, y, x + 40, y + 60, GetColor(0, 255, 0), TRUE);
+	DrawGraph(x, y, hImage, TRUE);
 }
 
 int Door::GetX()

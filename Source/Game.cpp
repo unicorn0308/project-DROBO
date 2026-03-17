@@ -3,6 +3,7 @@
 #include "Laser.h"
 #include "Switch.h"
 #include "Door.h"
+#include <DxLib.h>
 #include "../Library/SceneManager.h"
 
 Game::Game()
@@ -10,15 +11,14 @@ Game::Game()
     player = new Player();
     laser = new Laser();
     sw = new Switch();
-    door = new Door();
+	door = new Door();
+	laserOff = false;
+	isDead = false;
 }
 
 Game::~Game()
 {
-    delete player;
-    delete laser;
-    delete sw;
-    delete door;
+  
 }
 
 void Game::Update()
@@ -34,23 +34,21 @@ void Game::Update()
     {
         if (player->Hit(laser->GetX(), 0, 16, 480))
         {
-            SceneManager::ChangeScene("TITLE");
+			isDead = true;
+            SceneManager::ChangeScene("GAMEOVER");
         }
     }
 
     if (player->Hit(door->GetX(), door->GetY(), 40, 60))
     {
-        SceneManager::ChangeScene("TITLE");
+        SceneManager::ChangeScene("RESULT");
     }
 }
 
-
-
 void Game::Draw()
 {
-    player->Draw();
-    laser->Draw();
     sw->Draw();
+    laser->Draw();
     door->Draw();
-
+    player->Draw();
 }

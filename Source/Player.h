@@ -1,16 +1,17 @@
 #pragma once
 
-#include "../Library/GameObject.h"
+#include "Object2D.h"
 
 class Game;
 
-class Player : public GameObject
+class Player : public Object2D
 {
 private:
 
     Game* game;
 	int x;
 	int y;
+    int hImage;
    
 
 public:
@@ -23,5 +24,8 @@ public:
 
 
     bool Hit(int ox, int oy, int w, int h);
+
+	int GetX() { return x; }
+	int GetY() { return y; }
 
 };

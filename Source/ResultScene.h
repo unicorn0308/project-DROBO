@@ -6,16 +6,14 @@
 /// 
 /// タイトルを表示して、キーを押したらプレイシーンに移行する。
 /// </summary>
-class TitleScene : public SceneBase
+class ResultScene : public SceneBase
 {
 public:
-	TitleScene();
-	~TitleScene();
+     ResultScene();
+	~ResultScene();
 	void Update() override;
 	void Draw() override;
-
 private:
-	int titleImg;
-
+	int resultImg;
 
 };

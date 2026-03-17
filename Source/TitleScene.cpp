@@ -4,6 +4,12 @@
 
 TitleScene::TitleScene()
 {
+    titleImg = LoadGraph("Image/title.jpg");
+
+    if (titleImg == -1)
+    {
+        printfDx("タイトル画像ロード失敗\n");
+    }
 }
 
 TitleScene::~TitleScene()
@@ -27,8 +33,8 @@ void TitleScene::Update()
 
 void TitleScene::Draw()
 {
-    DrawString(300, 150, "ESCAPE ROBOT GAME", GetColor(255, 255, 255));
-
-    DrawString(260, 300, "Push [P] Key To Play", GetColor(255, 255, 255));
-    DrawString(260, 340, "Push [ESC] Key To Exit", GetColor(255, 255, 255));
+	DrawGraph(0, 0, titleImg, TRUE);
+    int fSize = SetFontSize(80);
+   DrawString(830, 900, "pでプレイ", GetColor(255, 255, 255),fSize);
+    //DrawString(260, 340, "Push [ESC] Key To Exit", GetColor(255, 255, 255));
 }

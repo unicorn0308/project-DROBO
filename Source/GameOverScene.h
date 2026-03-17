@@ -1,0 +1,14 @@
+#pragma once
+#include "../Library/SceneBase.h"
+#include "Game.h"
+
+class GameOverScene : public SceneBase
+{
+public:
+	GameOverScene();
+	~GameOverScene();
+	void Update() override;
+	void Draw() override;
+private:
+	int gameOverImg;
+};

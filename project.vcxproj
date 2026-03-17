@@ -154,9 +154,11 @@
     <ClInclude Include="Source\BootScene.h" />
     <ClInclude Include="Source\Door.h" />
     <ClInclude Include="Source\Game.h" />
+    <ClInclude Include="Source\GameOverScene.h" />
     <ClInclude Include="Source\Laser.h" />
     <ClInclude Include="Source\Object2D.h" />
     <ClInclude Include="Source\Player.h" />
+    <ClInclude Include="Source\ResultScene.h" />
     <ClInclude Include="Source\Screen.h" />
     <ClInclude Include="Source\PlayScene.h" />
     <ClInclude Include="Source\SceneFactory.h" />
@@ -180,10 +182,12 @@
     <ClCompile Include="Source\BootScene.cpp" />
     <ClCompile Include="Source\Door.cpp" />
     <ClCompile Include="Source\Game.cpp" />
+    <ClCompile Include="Source\GameOverScene.cpp" />
     <ClCompile Include="Source\Laser.cpp" />
     <ClCompile Include="Source\Object2D.cpp" />
     <ClCompile Include="Source\Player.cpp" />
     <ClCompile Include="Source\PlayScene.cpp" />
+    <ClCompile Include="Source\ResultScene.cpp" />
     <ClCompile Include="Source\SceneFactory.cpp" />
     <ClCompile Include="Source\switch.cpp" />
     <ClCompile Include="Source\TitleScene.cpp" />
