@@ -3,7 +3,7 @@
 
 Laser::Laser()
 {
-    x = 350;
+    x = 1000;
     off = false;
 }
 
@@ -11,7 +11,7 @@ void Laser::Draw()
 {
     if (!off)
     {
-        DrawBox(x, 0, x + 16, 480, GetColor(255, 0, 0), TRUE);
+        DrawBox(x, 0, x + 16, 1280, GetColor(255, 0, 0), TRUE);
     }
 }
 

@@ -3,8 +3,8 @@
 
 Switch::Switch()
 {
-    x = 200;
-    y = 200;
+    x = 500;
+    y = 500;
 }
 
 void Switch::Draw()

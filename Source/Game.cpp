@@ -44,10 +44,13 @@ void Game::Update()
     }
 }
 
+
+
 void Game::Draw()
 {
     player->Draw();
     laser->Draw();
     sw->Draw();
     door->Draw();
+
 }

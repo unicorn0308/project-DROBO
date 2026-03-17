@@ -3,8 +3,8 @@
 
 Door::Door()
 {
-    x = 550;
-    y = 200;
+    x = 1500;
+    y = 900;
 }
 
 void Door::Draw()

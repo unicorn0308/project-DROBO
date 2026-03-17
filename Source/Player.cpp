@@ -3,8 +3,8 @@
 
 Player::Player()
 {
-     x = 50;
-     y = 200;
+     x = 100;
+     y = 300;
 }
 
 Player::~Player()

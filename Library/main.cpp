@@ -18,6 +18,8 @@
 #include "../Source/Screen.h"
 #include "../ImGui/imgui_impl_dxlib.hpp"
 
+
+
 #define CoGVersion (4.1)
 
 // ƒvƒƒOƒ‰ƒ€‚Í WinMain ‚©‚çn‚Ü‚è‚Ü‚·
