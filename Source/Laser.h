@@ -9,6 +9,8 @@ private:
     int hImage;
     bool off;
 	int id;
+    int color;
+    int r, g, b;
 
 public:
 
@@ -25,4 +27,6 @@ public:
     bool IsOff();
 
     int GetX();
+    
+    void SetColor(int red, int green, int blue);
 };

@@ -21,7 +21,9 @@ Game::Game()
         lasers2 = new Laser();
         switches2 = new Switch();
   
-
+        laser->SetColor(255, 0, 0);     // Ô
+        lasers1->SetColor(0, 255, 0);   // —Î
+        lasers2->SetColor(0, 0, 255);   // Â
 
     isDead = false;
 }
