@@ -25,6 +25,11 @@ Game::Game()
         lasers1->SetColor(0, 255, 0);   // 緑
         lasers2->SetColor(0, 0, 255);   // 青
 
+        sw->SetColor(255, 0, 0);        // 赤スイッチ → 赤レーザー
+        switches1->SetColor(0, 255, 0); // 緑スイッチ → 緑レーザー
+        switches2->SetColor(0, 0, 255); // 青スイッチ → 青レーザー
+
+
     isDead = false;
 }
 

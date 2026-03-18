@@ -11,6 +11,9 @@ private:
 
 	int targetID;
 
+    int r, g, b;
+
+
 public:
 
     Switch();
@@ -22,4 +25,6 @@ public:
 
 	void SetTarget(int id);
 	int GetTarget();
+
+    void SetColor(int red, int green, int blue);
 };
