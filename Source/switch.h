@@ -9,6 +9,8 @@ private:
     int y;
     int hImage;
 
+	int targetID;
+
 public:
 
     Switch();
@@ -17,4 +19,7 @@ public:
 	void SetPosition(int x, int y);
     int GetX();
     int GetY();
+
+	void SetTarget(int id);
+	int GetTarget();
 };

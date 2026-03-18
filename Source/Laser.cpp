@@ -45,3 +45,14 @@ void Laser::SetPosition(int px )
     x = px;
    
 }
+
+
+void Laser::SetID(int i)
+{
+    id = i;
+}
+
+int Laser::GetID()
+{
+    return id;
+}

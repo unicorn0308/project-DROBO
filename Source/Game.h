@@ -20,6 +20,10 @@ private:
     Switch* sw;
     Door* door;
 
+	Laser* lasers1;
+	Switch* switches1;
+    Laser* lasers2;
+    Switch* switches2;
 public:
 
     Game();

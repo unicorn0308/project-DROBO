@@ -8,8 +8,13 @@ private:
     int x;
     int hImage;
     bool off;
+	int id;
 
 public:
+
+    void SetID(int i);   
+    int GetID();         
+
 
     Laser();
 

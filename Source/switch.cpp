@@ -27,3 +27,13 @@ void Switch::SetPosition(int px, int py)
     x = px;
     y = py;
 }
+
+void Switch::SetTarget(int id)
+{
+    targetID = id;
+}
+
+int Switch::GetTarget()
+{
+    return targetID;
+}
